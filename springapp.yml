@@ -38,7 +38,7 @@ spec:
   - port: 80
     targetPort: 8080
     nodePort: 30030
-  type: LoadBalancer
+  type: ClusterIP #NodePort #LoadBalancer
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
